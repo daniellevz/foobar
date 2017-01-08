@@ -30,8 +30,9 @@ def server():
     yield None 
     p.terminate()    
     p.join()    
-        
-def test_system_fixture(server):
+
+# unneeded test since we use docker and assume the server is up        
+def atest_system_fixture(server):
     response = requests.get('http://%s:%s/foo' % (test_host, test_port)) 
     assert response.text == 'foo'
     assert response.status_code == 200

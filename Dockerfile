@@ -20,7 +20,7 @@ RUN apt-get install -y python-distribute
 RUN apt-get install -y python3-pip
 
 ADD . /foobar
-ADD /var/log/foobar/ /var/log/foobar/
+#ADD /var/log/foobar /var/log/foobar
 
 RUN pip3 install -r /foobar/requirements.txt
 WORKDIR /foobar

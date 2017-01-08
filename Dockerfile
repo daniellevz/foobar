@@ -31,4 +31,4 @@ WORKDIR /foobar
 EXPOSE 80
 
 # default command executed after creation
-CMD python3 -m foobar 
+CMD python3 -m foobar >> /var/log/foobar/foobar.log 2>&1 

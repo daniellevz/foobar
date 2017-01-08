@@ -24,8 +24,8 @@ ADD /var/log/foobar/ /var/log/foobar/
 
 RUN pip3 install -r /foobar/requirements.txt
 WORKDIR /foobar
-# Port to expose (flask uses 5000)
-EXPOSE 5000
+# Port to expose (foobar uses 80)
+EXPOSE 80
 
 # default command executed after creation
 CMD python3 -m foobar

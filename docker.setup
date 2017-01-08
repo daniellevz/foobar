@@ -1,2 +1,2 @@
 #docker build -t foobar .
-docker run --name foobar -d -p 80:5000 -it foobar
+docker run --name foobar -d -p 80:80 -it foobar

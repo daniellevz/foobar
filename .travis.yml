@@ -20,4 +20,4 @@ install:
 # command to run tests
 script: 
     - pytest tests
-    - pytest tests/system
+    - pytest tests/system/app.py

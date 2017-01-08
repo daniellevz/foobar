@@ -3,7 +3,7 @@ import multiprocessing, pytest, requests, socket
 
 # system tests that assumes app is running
 def test_system_simple():
-    response = requests.get('http://%s:%s/foo' % (foobar.config['app_host'], foobar.config['app_port']))
+    response = requests.get('http://127.0.0.1:5000/foo') # TODO need same port the docker is lilnked to:/
     assert response.text == 'foo'
     assert response.status_code == 200
 

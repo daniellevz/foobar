@@ -22,8 +22,6 @@ RUN apt-get install -y python3-pip
 ADD requirements.txt /requirements.txt
 RUN pip3 install -r /requirements.txt
 
-VOLUME /var/log/foobar
-
 # add project and run it
 ADD . /foobar
 WORKDIR /foobar

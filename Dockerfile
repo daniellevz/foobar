@@ -19,14 +19,16 @@ RUN apt-get install -y python3-dev
 RUN apt-get install -y python-distribute
 RUN apt-get install -y python3-pip
 
-#ADD /var/log/foobar /var/log/foobar
-
 ADD requirements.txt /requirements.txt
 RUN pip3 install -r /requirements.txt
+
+VOLUME /var/log/foobar
+
+# add project and run it
 ADD . /foobar
 WORKDIR /foobar
 # Port to expose (foobar uses 80)
 EXPOSE 80
 
 # default command executed after creation
-CMD python3 -m foobar
+CMD python3 -m foobar 

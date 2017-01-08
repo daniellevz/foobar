@@ -7,6 +7,7 @@ Welcome to foobar's documentation!
 
    foo
    bar
+   api
 
 Indices and tables
 ==================

@@ -1,5 +1,5 @@
 import requests
 
 def foo():
-    """ this is a docstring: returns `foo`"""
+    """ This is a docstring: returns \`foo\`"""
     return 'foo'

@@ -1,4 +1,4 @@
 import foobar
 
-def test_foo():
+def test_bar():
     assert foobar.bar() == 'bar'

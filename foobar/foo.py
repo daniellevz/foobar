@@ -1,5 +1,6 @@
-import requests
+import postgresql, requests
+from .config import config
 
 def foo():
     """ This is a docstring: returns \`foo\`"""
-    return 'foo'
+    return config['db'].prepare("SELECT 'foo'").first()
